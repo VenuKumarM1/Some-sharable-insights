@@ -1,1 +1,22 @@
+# make a calculator
+# venu
+a = int(input("enter the first number \n"))
+b = int(input("enter the second number \n"))
+c = input("enter the operation you want to perform \n Eg: + - * / ")
+# print(type(c))
 
+if c== '+' :
+    print(f"addition of {a} and {b} is {a+b}")
+elif c== '-' :
+    print(f"subtraction of {a} and {b} is {a-b}")
+elif c== '*' :
+    print(f"Multiplication of {a} and {b} is {a*b}")
+elif c== '/' :
+    if b == 0:
+        b=int(input(f"you have entered second number as 0. Division error. please re-enter second number again \n"))
+        if b==0:
+            print("Error")
+        else:
+            print(f"division of {a} and {b} is {a/b}")
+    else:
+        print(f"division of {a} and {b} is.. {a/b}")
